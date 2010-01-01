@@ -5,7 +5,7 @@ Twitter uses OAuth as its supported form of authentication. This is fine for som
 
 This application, **OAuthery**, serves a simple purpose. You supply it the consumer key and secret for your OAuth application. It creates a request token and the URL for authorizing it. You complete the authorization in a web browser and get a PIN number. You then enter that PIN number back into the application, and it spits out your access key and secret. At this point, the user authentication is complete, and you can add those credentials to your script, and access API resources.
 
-This is largely intended as a developer tool for people developing applications with Twitter's OAuth impelmentation. It also provides code to show exactly how to perform the authentication process with OAuth and Twitter, so that developers who wish to implement such functionality in their own apps can use this as reference.
+This is largely intended as a developer tool for people developing applications with Twitter's OAuth implementation. It also provides code to show exactly how to perform the authentication process with OAuth and Twitter, so that developers who wish to implement such functionality in their own apps can use this as reference.
 
 Install
 =======
