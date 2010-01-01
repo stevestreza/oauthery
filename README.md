@@ -10,7 +10,7 @@ This is largely intended as a developer tool for people developing applications 
 Install
 =======
 
-Easy way: Download the .app from the Downloads section. No installation needed.
+Easy way: Download the application from the [Downloads section](http://github.com/amazingsyco/oauthery/downloads). No installation needed.
 
 Hard way: Clone the repository, update the submodules, and build the application in Xcode.
 
