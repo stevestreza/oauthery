@@ -30,14 +30,16 @@
 	return self;
 }
 
--(void)parseHTTPKey:(NSString *)paramKey body:(id)body{
+-(BOOL)parseHTTPKey:(NSString *)paramKey value:(id)body{
 	if ([paramKey isEqualToString:@"screen_name"]) {
 		screenName = [body copy];
 	}else if([paramKey isEqualToString:@"user_id"]){
 		userID = ((unsigned long long)[body longLongValue]);
 	}else{
-		[super parseHTTPKey:paramKey body:body];
+		return [super parseHTTPKey:paramKey value:body];
 	}
+
+	return YES;
 	
 }
 

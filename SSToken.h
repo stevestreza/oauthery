@@ -36,4 +36,7 @@ typedef unsigned long long SSTwitterID;
 
 // the Twitter OAuth implementation sets the oauth_verifier to the PIN
 -(NSString *)verifier;
+
+-(BOOL)parseHTTPKey:(NSString *)paramKey value:(id)body;
+
 @end
