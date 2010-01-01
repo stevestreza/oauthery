@@ -49,4 +49,6 @@
 -(IBAction)getRequestToken:sender;
 -(IBAction)getAccessToken:sender;
 
+-(void)authorizeWithRequestToken:(SSToken *)token;
+
 @end

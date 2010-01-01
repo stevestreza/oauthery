@@ -27,6 +27,33 @@
 									 secret:[consumerSecretField stringValue]] autorelease];
 }
 
+/**
+ Returns the support directory for the application, used to store the Core Data
+ store file.  This code uses a directory named "OAuthery" for
+ the content, either in the NSApplicationSupportDirectory location or (if the
+ former cannot be found), the system's temporary directory.
+ */
+
+- (NSString *)applicationSupportDirectory {
+	
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSApplicationSupportDirectory, NSUserDomainMask, YES);
+    NSString *basePath = ([paths count] > 0) ? [paths objectAtIndex:0] : NSTemporaryDirectory();
+    return [basePath stringByAppendingPathComponent:@"OAuthery"];
+}
+
+/**
+ Implementation of dealloc, to release the retained variables.
+ */
+
+- (void)dealloc {
+	
+    [window release];
+	
+    [super dealloc];
+}
+
+#pragma mark 1. Get Request Token
+
 -(IBAction)getRequestToken:sender{
 	if(consumer){
 		[consumer release];
@@ -55,9 +82,11 @@
 	[fetcher autorelease];
 }
 
+#pragma mark 2. Finished loading Request Token
+
 - (void)requestTokenTicket:(OAServiceTicket *)ticket didFailWithError:(NSError *)error{
 	if(!ticket.didSucceed){
-		printf("Fail\n");
+		NSLog(@"Failed to get request ticket: %@",error);
 	}
 }
 
@@ -66,14 +95,24 @@
 	if (ticket.didSucceed) {
 		NSString *responseBody = [[NSString alloc] initWithData:data
 													   encoding:NSUTF8StringEncoding];
-		requestToken = [[SSToken alloc] initWithHTTPResponseBody:responseBody];
-		[requestTokenField setStringValue:[requestToken key]];
-		
-		NSURL *authorizeURL = [NSURL URLWithString:[NSString stringWithFormat:@"https://twitter.com/oauth/authorize?oauth_token=%@",[requestToken key]]];
-		
-		[[NSWorkspace sharedWorkspace] openURL:authorizeURL];
+		[self authorizeWithRequestToken:[[[SSToken alloc] initWithHTTPResponseBody:responseBody] autorelease]];
 	}
 }
+
+#pragma mark 3. Authorize from Request Token
+
+-(void)authorizeWithRequestToken:(SSToken *)token{
+	[requestToken autorelease];
+	requestToken = [token retain];
+	
+	[requestTokenField setStringValue:[requestToken key]];
+	
+	NSURL *authorizeURL = [NSURL URLWithString:[NSString stringWithFormat:@"https://twitter.com/oauth/authorize?oauth_token=%@",[requestToken key]]];
+	
+	[[NSWorkspace sharedWorkspace] openURL:authorizeURL];
+}
+
+#pragma mark 4. Get Access Token from Reuest Token + PIN
 
 -(IBAction)getAccessToken:sender{
 	[requestToken setPin:[pinNumberField stringValue]];
@@ -99,9 +138,11 @@
 	[fetcher autorelease];	
 }
 
+#pragma mark 5. Finished loading Access Token
+
 - (void)accessTokenTicket:(OAServiceTicket *)ticket didFailWithError:(NSError *)error{
 	if(!ticket.didSucceed){
-		printf("Fail\n");
+		NSLog(@"Failed to get access ticket: %@",error);
 	}
 }
 
@@ -115,32 +156,5 @@
 		[accessSecretField setStringValue:[accessToken secret]];
 	}
 }
-
-
-/**
-    Returns the support directory for the application, used to store the Core Data
-    store file.  This code uses a directory named "OAuthery" for
-    the content, either in the NSApplicationSupportDirectory location or (if the
-    former cannot be found), the system's temporary directory.
- */
-
-- (NSString *)applicationSupportDirectory {
-
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSApplicationSupportDirectory, NSUserDomainMask, YES);
-    NSString *basePath = ([paths count] > 0) ? [paths objectAtIndex:0] : NSTemporaryDirectory();
-    return [basePath stringByAppendingPathComponent:@"OAuthery"];
-}
-
-/**
-    Implementation of dealloc, to release the retained variables.
- */
- 
-- (void)dealloc {
-
-    [window release];
-	
-    [super dealloc];
-}
-
 
 @end
