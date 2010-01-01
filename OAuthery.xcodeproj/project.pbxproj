@@ -50,44 +50,44 @@
 /* Begin PBXFileReference section */
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
-		1E8CB4DD10E9BAC4001DFC95 /* NSMutableURLRequest+Parameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSMutableURLRequest+Parameters.h"; path = "../../Bird/Dependencies/OAuthConsumer/Categories/NSMutableURLRequest+Parameters.h"; sourceTree = SOURCE_ROOT; };
-		1E8CB4DE10E9BAC4001DFC95 /* NSMutableURLRequest+Parameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSMutableURLRequest+Parameters.m"; path = "../../Bird/Dependencies/OAuthConsumer/Categories/NSMutableURLRequest+Parameters.m"; sourceTree = SOURCE_ROOT; };
-		1E8CB4DF10E9BAC4001DFC95 /* NSString+URLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+URLEncoding.h"; path = "../../Bird/Dependencies/OAuthConsumer/Categories/NSString+URLEncoding.h"; sourceTree = SOURCE_ROOT; };
-		1E8CB4E010E9BAC4001DFC95 /* NSString+URLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+URLEncoding.m"; path = "../../Bird/Dependencies/OAuthConsumer/Categories/NSString+URLEncoding.m"; sourceTree = SOURCE_ROOT; };
-		1E8CB4E110E9BAC4001DFC95 /* NSURL+Base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSURL+Base.h"; path = "../../Bird/Dependencies/OAuthConsumer/Categories/NSURL+Base.h"; sourceTree = SOURCE_ROOT; };
-		1E8CB4E210E9BAC4001DFC95 /* NSURL+Base.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSURL+Base.m"; path = "../../Bird/Dependencies/OAuthConsumer/Categories/NSURL+Base.m"; sourceTree = SOURCE_ROOT; };
-		1E8CB4E410E9BAC4001DFC95 /* Base64Transcoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = Base64Transcoder.c; path = ../../Bird/Dependencies/OAuthConsumer/Crytpo/Base64Transcoder.c; sourceTree = SOURCE_ROOT; };
-		1E8CB4E510E9BAC4001DFC95 /* Base64Transcoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Base64Transcoder.h; path = ../../Bird/Dependencies/OAuthConsumer/Crytpo/Base64Transcoder.h; sourceTree = SOURCE_ROOT; };
-		1E8CB4E610E9BAC4001DFC95 /* hmac.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = hmac.c; path = ../../Bird/Dependencies/OAuthConsumer/Crytpo/hmac.c; sourceTree = SOURCE_ROOT; };
-		1E8CB4E710E9BAC4001DFC95 /* hmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = hmac.h; path = ../../Bird/Dependencies/OAuthConsumer/Crytpo/hmac.h; sourceTree = SOURCE_ROOT; };
-		1E8CB4E810E9BAC4001DFC95 /* sha1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = sha1.c; path = ../../Bird/Dependencies/OAuthConsumer/Crytpo/sha1.c; sourceTree = SOURCE_ROOT; };
-		1E8CB4E910E9BAC4001DFC95 /* sha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sha1.h; path = ../../Bird/Dependencies/OAuthConsumer/Crytpo/sha1.h; sourceTree = SOURCE_ROOT; };
-		1E8CB4EA10E9BAC4001DFC95 /* OACall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OACall.h; path = ../../Bird/Dependencies/OAuthConsumer/OACall.h; sourceTree = SOURCE_ROOT; };
-		1E8CB4EB10E9BAC4001DFC95 /* OACall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OACall.m; path = ../../Bird/Dependencies/OAuthConsumer/OACall.m; sourceTree = SOURCE_ROOT; };
-		1E8CB4EC10E9BAC4001DFC95 /* OAConsumer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OAConsumer.h; path = ../../Bird/Dependencies/OAuthConsumer/OAConsumer.h; sourceTree = SOURCE_ROOT; };
-		1E8CB4ED10E9BAC4001DFC95 /* OAConsumer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OAConsumer.m; path = ../../Bird/Dependencies/OAuthConsumer/OAConsumer.m; sourceTree = SOURCE_ROOT; };
-		1E8CB4EE10E9BAC4001DFC95 /* OADataFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OADataFetcher.h; path = ../../Bird/Dependencies/OAuthConsumer/OADataFetcher.h; sourceTree = SOURCE_ROOT; };
-		1E8CB4EF10E9BAC4001DFC95 /* OADataFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OADataFetcher.m; path = ../../Bird/Dependencies/OAuthConsumer/OADataFetcher.m; sourceTree = SOURCE_ROOT; };
-		1E8CB4F010E9BAC4001DFC95 /* OAHMAC_SHA1SignatureProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OAHMAC_SHA1SignatureProvider.h; path = ../../Bird/Dependencies/OAuthConsumer/OAHMAC_SHA1SignatureProvider.h; sourceTree = SOURCE_ROOT; };
-		1E8CB4F110E9BAC4001DFC95 /* OAHMAC_SHA1SignatureProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OAHMAC_SHA1SignatureProvider.m; path = ../../Bird/Dependencies/OAuthConsumer/OAHMAC_SHA1SignatureProvider.m; sourceTree = SOURCE_ROOT; };
-		1E8CB4F210E9BAC4001DFC95 /* OAMutableURLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OAMutableURLRequest.h; path = ../../Bird/Dependencies/OAuthConsumer/OAMutableURLRequest.h; sourceTree = SOURCE_ROOT; };
-		1E8CB4F310E9BAC4001DFC95 /* OAMutableURLRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OAMutableURLRequest.m; path = ../../Bird/Dependencies/OAuthConsumer/OAMutableURLRequest.m; sourceTree = SOURCE_ROOT; };
-		1E8CB4F410E9BAC4001DFC95 /* OAPlaintextSignatureProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OAPlaintextSignatureProvider.h; path = ../../Bird/Dependencies/OAuthConsumer/OAPlaintextSignatureProvider.h; sourceTree = SOURCE_ROOT; };
-		1E8CB4F510E9BAC4001DFC95 /* OAPlaintextSignatureProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OAPlaintextSignatureProvider.m; path = ../../Bird/Dependencies/OAuthConsumer/OAPlaintextSignatureProvider.m; sourceTree = SOURCE_ROOT; };
-		1E8CB4F610E9BAC4001DFC95 /* OAProblem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OAProblem.h; path = ../../Bird/Dependencies/OAuthConsumer/OAProblem.h; sourceTree = SOURCE_ROOT; };
-		1E8CB4F710E9BAC4001DFC95 /* OAProblem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OAProblem.m; path = ../../Bird/Dependencies/OAuthConsumer/OAProblem.m; sourceTree = SOURCE_ROOT; };
-		1E8CB4F810E9BAC4001DFC95 /* OARequestParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OARequestParameter.h; path = ../../Bird/Dependencies/OAuthConsumer/OARequestParameter.h; sourceTree = SOURCE_ROOT; };
-		1E8CB4F910E9BAC4001DFC95 /* OARequestParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OARequestParameter.m; path = ../../Bird/Dependencies/OAuthConsumer/OARequestParameter.m; sourceTree = SOURCE_ROOT; };
-		1E8CB4FA10E9BAC4001DFC95 /* OAServiceTicket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OAServiceTicket.h; path = ../../Bird/Dependencies/OAuthConsumer/OAServiceTicket.h; sourceTree = SOURCE_ROOT; };
-		1E8CB4FB10E9BAC4001DFC95 /* OAServiceTicket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OAServiceTicket.m; path = ../../Bird/Dependencies/OAuthConsumer/OAServiceTicket.m; sourceTree = SOURCE_ROOT; };
-		1E8CB4FC10E9BAC4001DFC95 /* OASignatureProviding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OASignatureProviding.h; path = ../../Bird/Dependencies/OAuthConsumer/OASignatureProviding.h; sourceTree = SOURCE_ROOT; };
-		1E8CB4FE10E9BAC4001DFC95 /* OAToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OAToken.h; path = ../../Bird/Dependencies/OAuthConsumer/OAToken.h; sourceTree = SOURCE_ROOT; };
-		1E8CB4FF10E9BAC4001DFC95 /* OAToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OAToken.m; path = ../../Bird/Dependencies/OAuthConsumer/OAToken.m; sourceTree = SOURCE_ROOT; };
-		1E8CB50010E9BAC4001DFC95 /* OAToken_KeychainExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OAToken_KeychainExtensions.h; path = ../../Bird/Dependencies/OAuthConsumer/OAToken_KeychainExtensions.h; sourceTree = SOURCE_ROOT; };
-		1E8CB50110E9BAC4001DFC95 /* OAToken_KeychainExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OAToken_KeychainExtensions.m; path = ../../Bird/Dependencies/OAuthConsumer/OAToken_KeychainExtensions.m; sourceTree = SOURCE_ROOT; };
-		1E8CB50210E9BAC4001DFC95 /* OATokenManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OATokenManager.h; path = ../../Bird/Dependencies/OAuthConsumer/OATokenManager.h; sourceTree = SOURCE_ROOT; };
-		1E8CB50310E9BAC4001DFC95 /* OATokenManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OATokenManager.m; path = ../../Bird/Dependencies/OAuthConsumer/OATokenManager.m; sourceTree = SOURCE_ROOT; };
-		1E8CB50410E9BAC4001DFC95 /* OAuthConsumer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OAuthConsumer.h; path = ../../Bird/Dependencies/OAuthConsumer/OAuthConsumer.h; sourceTree = SOURCE_ROOT; };
+		1E8CB4DD10E9BAC4001DFC95 /* NSMutableURLRequest+Parameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableURLRequest+Parameters.h"; sourceTree = "<group>"; };
+		1E8CB4DE10E9BAC4001DFC95 /* NSMutableURLRequest+Parameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableURLRequest+Parameters.m"; sourceTree = "<group>"; };
+		1E8CB4DF10E9BAC4001DFC95 /* NSString+URLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEncoding.h"; sourceTree = "<group>"; };
+		1E8CB4E010E9BAC4001DFC95 /* NSString+URLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEncoding.m"; sourceTree = "<group>"; };
+		1E8CB4E110E9BAC4001DFC95 /* NSURL+Base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+Base.h"; sourceTree = "<group>"; };
+		1E8CB4E210E9BAC4001DFC95 /* NSURL+Base.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+Base.m"; sourceTree = "<group>"; };
+		1E8CB4E410E9BAC4001DFC95 /* Base64Transcoder.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Base64Transcoder.c; sourceTree = "<group>"; };
+		1E8CB4E510E9BAC4001DFC95 /* Base64Transcoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64Transcoder.h; sourceTree = "<group>"; };
+		1E8CB4E610E9BAC4001DFC95 /* hmac.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hmac.c; sourceTree = "<group>"; };
+		1E8CB4E710E9BAC4001DFC95 /* hmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hmac.h; sourceTree = "<group>"; };
+		1E8CB4E810E9BAC4001DFC95 /* sha1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha1.c; sourceTree = "<group>"; };
+		1E8CB4E910E9BAC4001DFC95 /* sha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha1.h; sourceTree = "<group>"; };
+		1E8CB4EA10E9BAC4001DFC95 /* OACall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OACall.h; sourceTree = "<group>"; };
+		1E8CB4EB10E9BAC4001DFC95 /* OACall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OACall.m; sourceTree = "<group>"; };
+		1E8CB4EC10E9BAC4001DFC95 /* OAConsumer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAConsumer.h; sourceTree = "<group>"; };
+		1E8CB4ED10E9BAC4001DFC95 /* OAConsumer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAConsumer.m; sourceTree = "<group>"; };
+		1E8CB4EE10E9BAC4001DFC95 /* OADataFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OADataFetcher.h; sourceTree = "<group>"; };
+		1E8CB4EF10E9BAC4001DFC95 /* OADataFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OADataFetcher.m; sourceTree = "<group>"; };
+		1E8CB4F010E9BAC4001DFC95 /* OAHMAC_SHA1SignatureProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAHMAC_SHA1SignatureProvider.h; sourceTree = "<group>"; };
+		1E8CB4F110E9BAC4001DFC95 /* OAHMAC_SHA1SignatureProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAHMAC_SHA1SignatureProvider.m; sourceTree = "<group>"; };
+		1E8CB4F210E9BAC4001DFC95 /* OAMutableURLRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAMutableURLRequest.h; sourceTree = "<group>"; };
+		1E8CB4F310E9BAC4001DFC95 /* OAMutableURLRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAMutableURLRequest.m; sourceTree = "<group>"; };
+		1E8CB4F410E9BAC4001DFC95 /* OAPlaintextSignatureProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAPlaintextSignatureProvider.h; sourceTree = "<group>"; };
+		1E8CB4F510E9BAC4001DFC95 /* OAPlaintextSignatureProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAPlaintextSignatureProvider.m; sourceTree = "<group>"; };
+		1E8CB4F610E9BAC4001DFC95 /* OAProblem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAProblem.h; sourceTree = "<group>"; };
+		1E8CB4F710E9BAC4001DFC95 /* OAProblem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAProblem.m; sourceTree = "<group>"; };
+		1E8CB4F810E9BAC4001DFC95 /* OARequestParameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OARequestParameter.h; sourceTree = "<group>"; };
+		1E8CB4F910E9BAC4001DFC95 /* OARequestParameter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OARequestParameter.m; sourceTree = "<group>"; };
+		1E8CB4FA10E9BAC4001DFC95 /* OAServiceTicket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAServiceTicket.h; sourceTree = "<group>"; };
+		1E8CB4FB10E9BAC4001DFC95 /* OAServiceTicket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAServiceTicket.m; sourceTree = "<group>"; };
+		1E8CB4FC10E9BAC4001DFC95 /* OASignatureProviding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OASignatureProviding.h; sourceTree = "<group>"; };
+		1E8CB4FE10E9BAC4001DFC95 /* OAToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAToken.h; sourceTree = "<group>"; };
+		1E8CB4FF10E9BAC4001DFC95 /* OAToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAToken.m; sourceTree = "<group>"; };
+		1E8CB50010E9BAC4001DFC95 /* OAToken_KeychainExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAToken_KeychainExtensions.h; sourceTree = "<group>"; };
+		1E8CB50110E9BAC4001DFC95 /* OAToken_KeychainExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAToken_KeychainExtensions.m; sourceTree = "<group>"; };
+		1E8CB50210E9BAC4001DFC95 /* OATokenManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OATokenManager.h; sourceTree = "<group>"; };
+		1E8CB50310E9BAC4001DFC95 /* OATokenManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OATokenManager.m; sourceTree = "<group>"; };
+		1E8CB50410E9BAC4001DFC95 /* OAuthConsumer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuthConsumer.h; sourceTree = "<group>"; };
 		1E8CB53C10E9BB12001DFC95 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		1E8CB5EC10E9C59D001DFC95 /* SSToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSToken.h; sourceTree = "<group>"; };
 		1E8CB5ED10E9C59D001DFC95 /* SSToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSToken.m; sourceTree = "<group>"; };
@@ -185,9 +185,8 @@
 				1E8CB50310E9BAC4001DFC95 /* OATokenManager.m */,
 				1E8CB50410E9BAC4001DFC95 /* OAuthConsumer.h */,
 			);
-			name = OAuthConsumer;
-			path = ../../Bird/Dependencies/OAuthConsumer;
-			sourceTree = SOURCE_ROOT;
+			path = OAuthConsumer;
+			sourceTree = "<group>";
 		};
 		1E8CB4DC10E9BAC4001DFC95 /* Categories */ = {
 			isa = PBXGroup;
@@ -199,9 +198,8 @@
 				1E8CB4E110E9BAC4001DFC95 /* NSURL+Base.h */,
 				1E8CB4E210E9BAC4001DFC95 /* NSURL+Base.m */,
 			);
-			name = Categories;
-			path = ../../Bird/Dependencies/OAuthConsumer/Categories;
-			sourceTree = SOURCE_ROOT;
+			path = Categories;
+			sourceTree = "<group>";
 		};
 		1E8CB4E310E9BAC4001DFC95 /* Crytpo */ = {
 			isa = PBXGroup;
@@ -213,9 +211,8 @@
 				1E8CB4E810E9BAC4001DFC95 /* sha1.c */,
 				1E8CB4E910E9BAC4001DFC95 /* sha1.h */,
 			);
-			name = Crytpo;
-			path = ../../Bird/Dependencies/OAuthConsumer/Crytpo;
-			sourceTree = SOURCE_ROOT;
+			path = Crytpo;
+			sourceTree = "<group>";
 		};
 		29B97314FDCFA39411CA2CEA /* OAuthery */ = {
 			isa = PBXGroup;
