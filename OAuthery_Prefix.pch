@@ -1,0 +1,9 @@
+//
+// Prefix header for all source files of the 'OAuthery' target in the 'OAuthery' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
+
+#define BNTargetIsMac 1
