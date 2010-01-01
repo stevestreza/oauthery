@@ -71,11 +71,7 @@
 		
 		NSURL *authorizeURL = [NSURL URLWithString:[NSString stringWithFormat:@"https://twitter.com/oauth/authorize?oauth_token=%@",[requestToken key]]];
 		
-		NSPasteboard *pasteboard = [NSPasteboard generalPasteboard];
-		[pasteboard declareTypes:[NSArray arrayWithObjects:NSURLPboardType, NSStringPboardType, nil] 
-						   owner:self];
-		[pasteboard setString:[authorizeURL absoluteString] forType:NSURLPboardType];
-		[pasteboard setString:[authorizeURL absoluteString] forType:NSStringPboardType];
+		[[NSWorkspace sharedWorkspace] openURL:authorizeURL];
 	}
 }
 
