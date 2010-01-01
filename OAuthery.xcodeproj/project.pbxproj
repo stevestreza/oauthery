@@ -24,7 +24,6 @@
 		1E8CB52D10E9BAC4001DFC95 /* OAServiceTicket.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E8CB4FB10E9BAC4001DFC95 /* OAServiceTicket.m */; };
 		1E8CB52F10E9BAC4001DFC95 /* OAToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E8CB4FF10E9BAC4001DFC95 /* OAToken.m */; };
 		1E8CB53010E9BAC4001DFC95 /* OAToken_KeychainExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E8CB50110E9BAC4001DFC95 /* OAToken_KeychainExtensions.m */; };
-		1E8CB53110E9BAC4001DFC95 /* OATokenManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E8CB50310E9BAC4001DFC95 /* OATokenManager.m */; };
 		1E8CB53D10E9BB12001DFC95 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E8CB53C10E9BB12001DFC95 /* Security.framework */; };
 		1E8CB5EE10E9C59D001DFC95 /* SSToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E8CB5ED10E9C59D001DFC95 /* SSToken.m */; };
 		2F7446990DB6B7EA00F9684A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F7446970DB6B7EA00F9684A /* MainMenu.xib */; };
@@ -331,7 +330,6 @@
 				1E8CB52D10E9BAC4001DFC95 /* OAServiceTicket.m in Sources */,
 				1E8CB52F10E9BAC4001DFC95 /* OAToken.m in Sources */,
 				1E8CB53010E9BAC4001DFC95 /* OAToken_KeychainExtensions.m in Sources */,
-				1E8CB53110E9BAC4001DFC95 /* OATokenManager.m in Sources */,
 				1E8CB5EE10E9C59D001DFC95 /* SSToken.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -373,6 +371,7 @@
 				INFOPLIST_FILE = "OAuthery-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = OAuthery;
+				SDKROOT = macosx10.5;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -388,6 +387,7 @@
 				INFOPLIST_FILE = "OAuthery-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				PRODUCT_NAME = OAuthery;
+				SDKROOT = macosx10.5;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
