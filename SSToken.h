@@ -1,25 +1,39 @@
 //
-//  BNToken.h
-//  Bird
+//  SSToken.h
+//  OAuthery
 //
-//  Created by Steve Streza on 6/30/09.
-//  Copyright 2009 __MyCompanyName__. All rights reserved.
+//  Licensed under the Apache License, Version 2.0 (the "License");
+//  you may not use this file except in compliance with the License.
+//  You may obtain a copy of the License at
+//
+//  http://www.apache.org/licenses/LICENSE-2.0
+//
+//  Unless required by applicable law or agreed to in writing, software
+//  distributed under the License is distributed on an "AS IS" BASIS,
+//  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+//  See the License for the specific language governing permissions and
+//  limitations under the License.
 //
 
 #import <Foundation/Foundation.h>
 #import "OAToken.h"
 
+typedef unsigned long long SSTwitterID;
+
 @interface SSToken : OAToken {
 	NSString *tokenBody;
 	NSString *pin;
 	
-//	MGTwitterEngineID userID;
 	NSString *screenName;
-	
-//	BNTwitterUser *user;
+	SSTwitterID userID;
 }
-//@property (readonly) BNTwitterUser *user;
+
 @property (copy) NSString *pin;
-@property (readonly,nonatomic) NSString *tokenBody;
+@property (nonatomic, readonly) NSString *tokenBody;
+
+@property (nonatomic, readonly) NSString *screenName;
+@property (nonatomic, readonly) SSTwitterID userID;
+
+// the Twitter OAuth implementation sets the oauth_verifier to the PIN
 -(NSString *)verifier;
 @end
