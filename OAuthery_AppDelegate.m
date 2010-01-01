@@ -154,6 +154,9 @@
 		accessToken = [[SSToken alloc] initWithHTTPResponseBody:responseBody];
 		[accessKeyField setStringValue:[accessToken key]];
 		[accessSecretField setStringValue:[accessToken secret]];
+		
+		[screenNameField setStringValue:[accessToken screenName]];
+		[userIDField setStringValue:[[NSNumber numberWithLongLong:[accessToken userID]] stringValue]];
 	}
 }
 

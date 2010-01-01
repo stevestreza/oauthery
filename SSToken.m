@@ -20,7 +20,7 @@
 
 @implementation SSToken
 
-@synthesize tokenBody, pin;
+@synthesize tokenBody, pin, screenName, userID;
 
 -(id)initWithHTTPResponseBody:(NSString *)body{
 	self = [super initWithHTTPResponseBody:body];

@@ -31,6 +31,9 @@
 	NSTextField *accessKeyField;
 	NSTextField *accessSecretField;
 
+	NSTextField *screenNameField;
+	NSTextField *userIDField;
+
 	OAConsumer *consumer;
 	SSToken *requestToken;
 	SSToken * accessToken;
@@ -43,8 +46,11 @@
 @property (nonatomic, retain) IBOutlet NSTextField *requestTokenField;
 @property (nonatomic, retain) IBOutlet NSTextField *pinNumberField;
 
-@property (nonatomic, retain) IBOutlet NSTextField * accessKeyField;
-@property (nonatomic, retain) IBOutlet NSTextField * accessSecretField;
+@property (nonatomic, retain) IBOutlet NSTextField *accessKeyField;
+@property (nonatomic, retain) IBOutlet NSTextField *accessSecretField;
+
+@property (nonatomic, retain) IBOutlet NSTextField *screenNameField;
+@property (nonatomic, retain) IBOutlet NSTextField *userIDField;
 
 -(IBAction)getRequestToken:sender;
 -(IBAction)getAccessToken:sender;
