@@ -62,7 +62,7 @@
 	
 	consumer = [[self consumer] retain];
 	
-	NSURL *url = [NSURL URLWithString:@"https://twitter.com/oauth/request_token"];
+	NSURL *url = [NSURL URLWithString:@"https://api.twitter.com/oauth/request_token"];
 	
 	OAMutableURLRequest *request = [[OAMutableURLRequest alloc] initWithURL:url
 																   consumer:consumer
@@ -107,7 +107,7 @@
 	
 	[requestTokenField setStringValue:[requestToken key]];
 	
-	NSURL *authorizeURL = [NSURL URLWithString:[NSString stringWithFormat:@"https://twitter.com/oauth/authorize?oauth_token=%@",[requestToken key]]];
+	NSURL *authorizeURL = [NSURL URLWithString:[NSString stringWithFormat:@"https://api.twitter.com/oauth/authorize?oauth_token=%@",[requestToken key]]];
 	
 	[[NSWorkspace sharedWorkspace] openURL:authorizeURL];
 }
@@ -117,7 +117,7 @@
 -(IBAction)getAccessToken:sender{
 	[requestToken setPin:[pinNumberField stringValue]];
 	
-    NSURL *url = [NSURL URLWithString:@"https://twitter.com/oauth/access_token"];
+    NSURL *url = [NSURL URLWithString:@"https://api.twitter.com/oauth/access_token"];
 	
     OAMutableURLRequest *request = [[OAMutableURLRequest alloc] initWithURL:url
                                                                    consumer:consumer
